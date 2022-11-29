@@ -1,0 +1,150 @@
+/* Import Fira Code From google fonts */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Fira Code", sans-serif;
+}
+
+body > h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+body > h1 > span:nth-child(2) {
+    color: rgb(47, 255, 50);
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+  }
+
+#bookMarkContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding: 10px;
+	max-width: 800px;
+	margin: auto;
+}
+
+.bookMark {
+	padding: 10px 20px;
+	border: 1px solid black;
+	border-radius: 10px;
+	cursor: pointer;
+	color: #000;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+    transition: .5s ease;
+}
+
+.bookMark.firstOfCategory {
+	margin-top: 30px;
+}
+
+.bookMark .categorySpan {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: dodgerblue;
+	font-weight: bold;
+}
+
+.bookMark .descriptionP {
+    padding: 0 20px;
+	max-height: 0;
+	overflow: hidden;
+	color: rgb(144, 144, 144);
+    transition: .5s ease;
+
+}
+
+.bookMark:hover {
+	background-color: #00000010;
+}
+
+.bookMark:hover .descriptionP {
+	padding: 20px;
+	max-height: none;
+}
+.AddBookMarkContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	padding: 10px 20px;
+	border-radius: 10px;
+	background: rgb(47, 255, 50);
+	border: 1px solid black;
+	margin: auto;
+	width: fit-content;
+	cursor: pointer;
+}
+
+#formContainer,
+#contextMenuContainer {
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #0000005c;
+	display: none;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border-radius: 10px;
+	border: 1px solid black;
+	padding: 20px;
+	max-width: 600px;
+	margin: auto;
+	background: white;
+	margin-top: 30px;
+}
+
+form input,
+form textarea {
+	padding: 20px 10px;
+	border-radius: 10px;
+	border: 2px solid #00000010;
+}
+
+form button {
+	margin: 0;
+	align-self: flex-end;
+}
+
+#contextMenuContainer {
+	background-color: #00000000;
+}
+
+#contextMenu {
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	border: 1px solid black;
+	margin: auto;
+	background: white;
+	max-width: 300px;
+	min-width: 100px;
+	width: 200px;
+	position: absolute;
+}
+
+#contextMenu span {
+	display: block;
+	padding: 10px;
+	cursor: pointer;
+}
+
+#contextMenu span:hover {
+	background-color: #00000010;
+}

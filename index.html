@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark app</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1><span>Book</span><span>Marks</span></h1>
+    <div id="bookMarkContainer"></div>
+    <div class="AddBookMarkContainer">
+        <button id="AddBookMark">Add BookMark</button>
+    </div>
+    <div id="formContainer">
+        <form id="form">
+            <h1>Add bookmark</h1>
+            <input required type="text" id="title" placeholder="title of bookmark">
+            <textarea required id="description" placeholder="description of bookmark"></textarea>
+            <input required type="url" id="link" placeholder="link to bookmark">
+            <input required type="text" id="category" placeholder="category of bookmark">
+            <input required type="hidden" id="dateModified">
+            <input required type="hidden" id="toUpdate">
+            <button>UPDATE/CREATE</button>
+        </form>
+    </div>
+    <div id="contextMenuContainer">
+        <div id="contextMenu">
+            <span id="EditBookMark">Edit</span>
+            <span id="DeleteBookMark">Delete</span>
+        </div>
+    </div>
+</body>
+<script type="module" src="./app.js"></script>
+</html>
